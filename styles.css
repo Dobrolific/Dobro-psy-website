@@ -291,27 +291,12 @@ h4 { font-size: 1.1rem; font-weight: 600; }
     align-items: center;
 }
 
-.about-image-placeholder {
-    background: var(--color-warm-bg);
+.about-photo {
+    width: 100%;
     border-radius: var(--radius-lg);
+    object-fit: cover;
     aspect-ratio: 3/4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    border: 2px dashed var(--color-border);
-}
-
-.about-image-placeholder svg {
-    width: 120px;
-    opacity: 0.5;
-}
-
-.placeholder-text {
-    font-size: 0.9rem;
-    color: var(--color-text-light);
-    font-weight: 500;
+    box-shadow: var(--shadow-lg);
 }
 
 .about-text h2 {
