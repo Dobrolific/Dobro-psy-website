@@ -212,7 +212,11 @@
                 </div>
             </div>
             <div class="contact-form-wrap">
-                <form class="contact-form" id="contactForm">
+                <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="ddf649b5-fd8b-4a91-ade1-483241228c0b">
+                    <input type="hidden" name="subject" value="Consultație nouă — dobro.ro">
+                    <input type="hidden" name="from_name" value="Dobro Psy Website">
+                    <input type="checkbox" name="botcheck" style="display:none">
                     <div class="form-group">
                         <label for="name">Numele întreg *</label>
                         <input type="text" id="name" name="name" required placeholder="Numele tău întreg">
