@@ -39,20 +39,10 @@ document.querySelectorAll('.faq-question').forEach(button => {
 
 // --- Contact form ---
 const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const formWrap = document.querySelector('.contact-form-wrap');
-    formWrap.innerHTML = `
-        <div class="form-success">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                <polyline points="22 4 12 14.01 9 11.01"/>
-            </svg>
-            <h3>Thank you!</h3>
-            <p>Your consultation request has been received. I'll get back to you within 24 hours.</p>
-        </div>
-    `;
+contactForm.addEventListener('submit', () => {
+    const btn = contactForm.querySelector('button[type="submit"]');
+    btn.textContent = 'Se trimite...';
+    btn.disabled = true;
 });
 
 // --- Scroll animations ---
